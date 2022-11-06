@@ -3,8 +3,7 @@ import time
 
 app = Flask(__name__)
 
-@app.route("/Api",method=["POST"]):
-    
+@app.route("/Api",method=["POST"])
 def response():
     query = dict(request.form)['query']
     result = query + " " + time.ctime()
