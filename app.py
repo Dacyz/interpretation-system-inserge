@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 from tensorflow.keras.models import load_model
 from nltk.stem import WordNetLemmatizer
-import random
 import json
 import pickle
 import numpy as np
@@ -53,7 +52,7 @@ def get_respuesta(intenciones_list, intenciones_json):
     result = 'No entendi :('
     for i in lista_de_intenciones:
         if i['tag'] == tag:
-            result = random.choice(i['respuestas'])
+            result = i['respuestas']
             break
     return result
 
