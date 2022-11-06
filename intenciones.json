@@ -1,0 +1,421 @@
+{
+    "intenciones": [
+        {
+            "tag": "BuscarPorModuloTip3M",
+            "patrones": [
+                "muestrame los modulos de 3 metros",
+                "despliega los modulos de 3 metros",
+                "modulos de 3 metros",
+                "modulos de 3 m",
+                "modulos de 3m",
+                "muestrame modulos de 3 metros",
+                "modulos con frente de 3 metros",
+                "modulos con frente de 3 m",
+                "modulos con frente de 3m",
+                "proyectos de 3",
+                "proyectos de 3m",
+                "proyectos de 3 metros"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '3m').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip3.5M",
+            "patrones": [
+                "muestrame los modulos de 3.5 metros",
+                "despliega los modulos de 3.5 metros",
+                "modulos de 3.5 metros",
+                "modulos de 3.5 m",
+                "modulos de 3.5m",
+                "muestrame modulos de 3.5 metros",
+                "modulos con frente de 3.5 metros",
+                "modulos con frente de 3.5 m",
+                "modulos con frente de 3.5m",
+                "proyectos de 3.5",
+                "proyectos de 3.5m",
+                "proyectos de 3.5 metros"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '3.5m').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip4M",
+            "patrones": [
+                "muestrame los modulos de 4 metros",
+                "despliega los modulos de 4 metros",
+                "modulos de 4 metros",
+                "modulos de 4 m",
+                "modulos de 4m",
+                "muestrame modulos de 4 metros",
+                "modulos con frente de 4 metros",
+                "modulos con frente de 4 m",
+                "modulos con frente de 4m",
+                "proyectos de 4",
+                "proyectos de 4m",
+                "proyectos de 4 metros"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '4m').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip5M",
+            "patrones": [
+                "muestrame los modulos de 5 metros",
+                "despliega los modulos de 5 metros",
+                "modulos de 5 metros",
+                "modulos de 5 m",
+                "modulos de 5m",
+                "muestrame modulos de 5 metros",
+                "modulos con frente de 5 metros",
+                "modulos con frente de 5 m",
+                "modulos con frente de 5m",
+                "proyectos de 5",
+                "proyectos de 5m",
+                "proyectos de 5 metros"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '5m').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip6M",
+            "patrones": [
+                "muestrame los modulos de 6 metros",
+                "despliega los modulos de 6 metros",
+                "modulos de 6 metros",
+                "modulos de 6 m",
+                "modulos de 6m",
+                "muestrame modulos de 6 metros",
+                "modulos con frente de 6 metros",
+                "modulos con frente de 6 m",
+                "modulos con frente de 6m",
+                "proyectos de 6",
+                "proyectos de 6m",
+                "proyectos de 6 metros"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '6m').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip7M",
+            "patrones": [
+                "muestrame los modulos de 7 metros",
+                "despliega los modulos de 7 metros",
+                "modulos de 7 metros",
+                "modulos de 7 m",
+                "modulos de 7m",
+                "muestrame modulos de 7 metros",
+                "modulos con frente de 7 metros",
+                "modulos con frente de 7 m",
+                "modulos con frente de 7m",
+                "proyectos de 7",
+                "proyectos de 7m",
+                "proyectos de 7 metros"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '7m').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip3MTambogrande",
+            "patrones": [
+                "muestrame los modulos de 3 metros de tambogrande",
+                "despliega los modulos de 3 metros de tambogrande",
+                "modulos de 3 metros de tambogrande",
+                "modulos de 3 m de tambogrande",
+                "muestrame modulos de 3 metros de tambogrande",
+                "modulos con frente de 3 metros de tambogrande",
+                "modulos con frente de 3 m de tambogrande"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '3m').where('distrito', '==', 'tambogrande').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip3.5MTambogrande",
+            "patrones": [
+                "muestrame los modulos de 3.5 metros de tambogrande",
+                "despliega los modulos de 3.5 metros de tambogrande",
+                "modulos de 3.5 metros de tambogrande",
+                "modulos de 3.5 m de tambogrande",
+                "modulos de 3.5m de tambogrande",
+                "muestrame modulos de 3.5 metros de tambogrande",
+                "modulos con frente de 3.5 metros de tambogrande",
+                "modulos con frente de 3.5 m de tambogrande",
+                "modulos con frente de 3.5m de tambogrande"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '3.5m').where('distrito', '==', 'tambogrande').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip4MTambogrande",
+            "patrones": [
+                "muestrame los modulos de 4 metros de tambogrande",
+                "despliega los modulos de 4 metros de tambogrande",
+                "modulos de 4 metros de tambogrande",
+                "modulos de 4 m de tambogrande",
+                "modulos de 4m de tambogrande",
+                "muestrame modulos de 4 metros de tambogrande",
+                "modulos con frente de 4 metros de tambogrande",
+                "modulos con frente de 4 m de tambogrande",
+                "modulos con frente de 4m de tambogrande"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '4m').where('distrito', '==', 'tambogrande').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip5MTambogrande",
+            "patrones": [
+                "muestrame los modulos de 5 metros de tambogrande",
+                "despliega los modulos de 5 metros de tambogrande",
+                "modulos de 5 metros de tambogrande",
+                "modulos de 5 m de tambogrande",
+                "modulos de 5m de tambogrande",
+                "muestrame modulos de 5 metros de tambogrande",
+                "modulos con frente de 5 metros de tambogrande",
+                "modulos con frente de 5 m de tambogrande",
+                "modulos con frente de 5m de tambogrande"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '5m').where('distrito', '==', 'tambogrande').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip6MTambogrande",
+            "patrones": [
+                "muestrame los modulos de 6 metros de tambogrande",
+                "despliega los modulos de 6 metros de tambogrande",
+                "modulos de 6 metros de tambogrande",
+                "modulos de 6 m de tambogrande",
+                "modulos de 6m de tambogrande",
+                "muestrame modulos de 6 metros de tambogrande",
+                "modulos con frente de 6 metros de tambogrande",
+                "modulos con frente de 6 m de tambogrande",
+                "modulos con frente de 6m de tambogrande"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '6m').where('distrito', '==', 'tambogrande').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip7MTambogrande",
+            "patrones": [
+                "muestrame los modulos de 7 metros de tambogrande",
+                "despliega los modulos de 7 metros de tambogrande",
+                "modulos de 7 metros de tambogrande",
+                "modulos de 7 m de tambogrande",
+                "muestrame modulos de 7 metros de tambogrande",
+                "modulos con frente de 7 metros de tambogrande",
+                "modulos con frente de 7 m de tambogrande"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '7m').where('distrito', '==', 'tambogrande').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip3MPiura",
+            "patrones": [
+                "muestrame los modulos de 3 metros de piura",
+                "despliega los modulos de 3 metros de piura",
+                "modulos de 3 metros de piura",
+                "modulos de 3 m de piura",
+                "muestrame modulos de 3 metros de piura",
+                "modulos con frente de 3 metros de piura",
+                "modulos con frente de 3 m de piura",
+                "proyectos de 3 de piura"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '3m').where('distrito', '==', 'piura').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip3.5MPiura",
+            "patrones": [
+                "muestrame los modulos de 3.5 metros de piura",
+                "despliega los modulos de 3.5 metros de piura",
+                "modulos de 3.5 metros de piura",
+                "modulos de 3.5 m de piura",
+                "muestrame modulos de 3.5 metros de piura",
+                "modulos con frente de 3.5 metros de piura",
+                "modulos con frente de 3.5 m de piura",
+                "proyectos de 3.5 de piura"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '3.5m').where('distrito', '==', 'piura').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip4MPiura",
+            "patrones": [
+                "muestrame los modulos de 4 metros de piura",
+                "despliega los modulos de 4 metros de piura",
+                "modulos de 4 metros de piura",
+                "modulos de 4 m de piura",
+                "muestrame modulos de 4 metros de piura",
+                "modulos con frente de 4 metros de piura",
+                "modulos con frente de 4 m de piura",
+                "proyectos de 4 de piura"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '4m').where('distrito', '==', 'piura').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip5MPiura",
+            "patrones": [
+                "muestrame los modulos de 5 metros de piura",
+                "despliega los modulos de 5 metros de piura",
+                "modulos de 5 metros de piura",
+                "modulos de 5 m de piura",
+                "muestrame modulos de 5 metros de piura",
+                "modulos con frente de 5 metros de piura",
+                "modulos con frente de 5 m de piura",
+                "proyectos de 5 de piura"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '5m').where('distrito', '==', 'piura').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip6MPiura",
+            "patrones": [
+                "muestrame los modulos de 6 metros de piura",
+                "despliega los modulos de 6 metros de piura",
+                "modulos de 6 metros de piura",
+                "modulos de 6 m de piura",
+                "muestrame modulos de 6 metros de piura",
+                "modulos con frente de 6 metros de piura",
+                "modulos con frente de 6 m de piura",
+                "proyectos de 6 de piura"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '6m').where('distrito', '==', 'piura').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorModuloTip7MPiura",
+            "patrones": [
+                "muestrame los modulos de 7 metros de piura",
+                "despliega los modulos de 7 metros de piura",
+                "modulos de 7 metros de piura",
+                "modulos de 7 m de piura",
+                "muestrame modulos de 7 metros de piura",
+                "modulos con frente de 7 metros de piura",
+                "modulos con frente de 7 m de piura",
+                "proyectos de 7 de piura"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('modulo', '==', '7m').where('distrito', '==', 'piura').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorBeneficiario",
+            "patrones": [
+                "muestrame el proyecto del beneficiario llamado",
+                "muestrame el proyecto del señor llamado",
+                "muestrame el proyecto del señora llamada",
+                "muestrame el proyecto del beneficiario",
+                "muestrame el proyecto del señora",
+                "muestrame el proyecto del señor",
+                "encuentra el proyecto del beneficiario",
+                "lista el proyecto del beneficiario",
+                "lista el proyecto del senor",
+                "lista el proyecto de la senora",
+                "lista el proyecto de la señora",
+                "lista el proyecto de la señor",
+                "encuentra el proyecto del beneficiario con nombre",
+                "busca el proyecto del beneficiario llamado ",
+                "lista el proyecto de",
+                "muestrame el modulo de",
+                "encuentra el modulo de",
+                "busca el modulo de",
+                "lista el modulo de"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('beneficiario', '==', '#BENEFICIARIO#').get()"
+            ]
+        },
+        {
+            "tag": "BuscarPorBeneficiarioPiura",
+            "patrones": [
+                "muestrame el proyecto de piura del beneficiario llamado",
+                "muestrame el proyecto de piura del señor llamado",
+                "muestrame el proyecto de piura del señora llamada",
+                "muestrame el proyecto de piura del beneficiario",
+                "muestrame el proyecto de piura del señora",
+                "muestrame el proyecto de piura del señor",
+                "encuentra el proyecto de piura del beneficiario",
+                "lista el proyecto de piura del beneficiario",
+                "lista el proyecto de piura del senor",
+                "lista el proyecto de piura de la senora",
+                "lista el proyecto de piura de la señora",
+                "lista el proyecto de piura de la señor",
+                "encuentra el proyecto de piura del beneficiario con nombre",
+                "busca el proyecto de piura del beneficiario llamado ",
+                "lista el proyecto de piura de",
+                "muestrame el modulo de piura de",
+                "encuentra el modulo de piura de",
+                "busca el modulo de piura de",
+                "lista el modulo de piura de"
+            ],
+            "respuestas": [
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "beneficiario": "#BENEFICIARIO#",
+                        "distrito": "Piura"
+                    }
+                }
+            ]
+        },
+        {
+            "tag": "BuscarPorBeneficiarioTambogrande",
+            "patrones": [
+                "muestrame el proyecto de tambogrande del beneficiario llamado",
+                "muestrame el proyecto de tambogrande del señor llamado",
+                "muestrame el proyecto de tambogrande del señora llamada",
+                "muestrame el proyecto de tambogrande del beneficiario",
+                "muestrame el proyecto de tambogrande del señora",
+                "muestrame el proyecto de tambogrande del señor",
+                "encuentra el proyecto de tambogrande del beneficiario",
+                "lista el proyecto de tambogrande del beneficiario",
+                "lista el proyecto de tambogrande del senor",
+                "lista el proyecto de tambogrande de la senora",
+                "lista el proyecto de tambogrande de la señora",
+                "lista el proyecto de tambogrande de la señor",
+                "encuentra el proyecto de tambogrande del beneficiario con nombre",
+                "busca el proyecto de tambogrande del beneficiario llamado ",
+                "lista el proyecto de tambogrande de",
+                "muestrame el modulo de tambogrande de",
+                "encuentra el modulo de tambogrande de",
+                "busca el modulo de tambogrande de",
+                "lista el modulo de tambogrande de"
+            ],
+            "respuestas": [
+                "db.collection('proyectos').where('beneficiario', '==', '#BENEFICIARIO#').where('distrito', '==', 'tambogrande').get()"
+            ]
+        },
+        {
+            "tag": "BuscarTodosUsuarios",
+            "patrones": [
+                "muestrame todos los usuarios",
+                "muestrame los usuarios",
+                "despliega todos los usuarios",
+                "despliega los usuarios",
+                "usuarios totales",
+                "mandame los usuarios",
+                "muestrame los usuarios totales",
+                "cuales son todos los usuarios"
+            ],
+            "respuestas": [
+                "db.collection('usuarios').get()"
+            ]
+        }
+    ]
+}
