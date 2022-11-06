@@ -137,7 +137,33 @@ app = Flask(__name__)
 
 @app.route("/miau", methods=['GET'])
 def home():
-    return jsonify('JsonAws')
+    JsonAws = {}
+    mensaje = str(request.args['Query'])
+    mensaje = mensaje.strip().lower()
+    JsonAws['Query'] = str(mensaje)
+    ContainsNumbers = BusquedaDeNumbers(mensaje)
+    if (ContainsNumbers == None):
+        if (RecognizeColection(mensaje)):
+            ints = predecir_clase(mensaje)
+            res = get_respuesta(ints, intenciones)
+            if(type(res) != dict):
+                if (res.find('beneficiario') != -1):
+                    res = res.replace('#BENEFICIARIO#', GetBeneficiario(mensaje))
+            else :
+                if 'beneficiario' in res["campos"]:
+                    res["campos"]["beneficiario"] = GetBeneficiario(mensaje)
+            JsonAws['Answer'] = res
+        else:
+            JsonAws['Error'] = 'No se encontro resultados'
+    else:
+        ListaDeKeys = list(ContainsNumbers.keys())
+        if ListaDeKeys[0] == 'DNI':
+            JsonAws['Answer'] = "db.collection('proyectos').where('dni', '==', '" + \
+                ContainsNumbers['DNI']+"').get()"
+        elif ListaDeKeys[0] == 'Telefono':
+            JsonAws['Answer'] = "db.collection('proyectos').where('telefono', '==', '" + \
+                ContainsNumbers['Telefono']+"').get()"
+    return jsonify(JsonAws)
 
 
 if __name__ == '__main__':
