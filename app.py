@@ -8,6 +8,7 @@ import numpy as np
 
 import nltk
 nltk.download('omw-1.4')
+nltk.download('punkt')
 
 lematizador = WordNetLemmatizer()
 intenciones = json.loads(open('intenciones.json').read())
