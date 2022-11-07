@@ -17,7 +17,6 @@ palabras = pickle.load(open('palabras.pkl', 'rb'))
 clases = pickle.load(open('clases.pkl', 'rb'))
 model = load_model('chatbotmodel.h5')
 
-
 def limpiar_sentencia(sentencia):
     palabras_sentencia = nltk.word_tokenize(sentencia)
     palabras_sentencia = [lematizador.lemmatize(
