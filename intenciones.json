@@ -8,6 +8,7 @@
                 "modulos de 3 metros",
                 "modulos de 3 m",
                 "modulos de 3m",
+                "3m",
                 "muestrame modulos de 3 metros",
                 "modulos con frente de 3 metros",
                 "modulos con frente de 3 m",
@@ -17,7 +18,15 @@
                 "proyectos de 3 metros"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '3m').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "3m",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -28,6 +37,7 @@
                 "modulos de 3.5 metros",
                 "modulos de 3.5 m",
                 "modulos de 3.5m",
+                "3.5m",
                 "muestrame modulos de 3.5 metros",
                 "modulos con frente de 3.5 metros",
                 "modulos con frente de 3.5 m",
@@ -37,7 +47,15 @@
                 "proyectos de 3.5 metros"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '3.5m').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "3.5m",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -48,6 +66,7 @@
                 "modulos de 4 metros",
                 "modulos de 4 m",
                 "modulos de 4m",
+                "4m",
                 "muestrame modulos de 4 metros",
                 "modulos con frente de 4 metros",
                 "modulos con frente de 4 m",
@@ -57,7 +76,15 @@
                 "proyectos de 4 metros"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '4m').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "4m",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -68,6 +95,7 @@
                 "modulos de 5 metros",
                 "modulos de 5 m",
                 "modulos de 5m",
+                "5m",
                 "muestrame modulos de 5 metros",
                 "modulos con frente de 5 metros",
                 "modulos con frente de 5 m",
@@ -77,7 +105,15 @@
                 "proyectos de 5 metros"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '5m').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "5m",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -88,6 +124,7 @@
                 "modulos de 6 metros",
                 "modulos de 6 m",
                 "modulos de 6m",
+                "6m",
                 "muestrame modulos de 6 metros",
                 "modulos con frente de 6 metros",
                 "modulos con frente de 6 m",
@@ -97,7 +134,15 @@
                 "proyectos de 6 metros"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '6m').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "6m",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -108,6 +153,7 @@
                 "modulos de 7 metros",
                 "modulos de 7 m",
                 "modulos de 7m",
+                "7m",
                 "muestrame modulos de 7 metros",
                 "modulos con frente de 7 metros",
                 "modulos con frente de 7 m",
@@ -117,7 +163,15 @@
                 "proyectos de 7 metros"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '7m').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "7m",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -127,12 +181,25 @@
                 "despliega los modulos de 3 metros de tambogrande",
                 "modulos de 3 metros de tambogrande",
                 "modulos de 3 m de tambogrande",
+                "3m en tambogrande",
                 "muestrame modulos de 3 metros de tambogrande",
                 "modulos con frente de 3 metros de tambogrande",
                 "modulos con frente de 3 m de tambogrande"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '3m').where('distrito', '==', 'tambogrande').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "3m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -143,13 +210,26 @@
                 "modulos de 3.5 metros de tambogrande",
                 "modulos de 3.5 m de tambogrande",
                 "modulos de 3.5m de tambogrande",
+                "3.5m en tambogrande",
                 "muestrame modulos de 3.5 metros de tambogrande",
                 "modulos con frente de 3.5 metros de tambogrande",
                 "modulos con frente de 3.5 m de tambogrande",
                 "modulos con frente de 3.5m de tambogrande"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '3.5m').where('distrito', '==', 'tambogrande').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "3.5m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -160,13 +240,26 @@
                 "modulos de 4 metros de tambogrande",
                 "modulos de 4 m de tambogrande",
                 "modulos de 4m de tambogrande",
+                "4m en tambogrande",
                 "muestrame modulos de 4 metros de tambogrande",
                 "modulos con frente de 4 metros de tambogrande",
                 "modulos con frente de 4 m de tambogrande",
                 "modulos con frente de 4m de tambogrande"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '4m').where('distrito', '==', 'tambogrande').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "4m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -177,13 +270,26 @@
                 "modulos de 5 metros de tambogrande",
                 "modulos de 5 m de tambogrande",
                 "modulos de 5m de tambogrande",
+                "5m en tambogrande",
                 "muestrame modulos de 5 metros de tambogrande",
                 "modulos con frente de 5 metros de tambogrande",
                 "modulos con frente de 5 m de tambogrande",
                 "modulos con frente de 5m de tambogrande"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '5m').where('distrito', '==', 'tambogrande').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "5m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -194,13 +300,26 @@
                 "modulos de 6 metros de tambogrande",
                 "modulos de 6 m de tambogrande",
                 "modulos de 6m de tambogrande",
+                "6m en tambogrande",
                 "muestrame modulos de 6 metros de tambogrande",
                 "modulos con frente de 6 metros de tambogrande",
                 "modulos con frente de 6 m de tambogrande",
                 "modulos con frente de 6m de tambogrande"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '6m').where('distrito', '==', 'tambogrande').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "6m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -209,13 +328,26 @@
                 "muestrame los modulos de 7 metros de tambogrande",
                 "despliega los modulos de 7 metros de tambogrande",
                 "modulos de 7 metros de tambogrande",
+                "7m en tambogrande",
                 "modulos de 7 m de tambogrande",
                 "muestrame modulos de 7 metros de tambogrande",
                 "modulos con frente de 7 metros de tambogrande",
                 "modulos con frente de 7 m de tambogrande"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '7m').where('distrito', '==', 'tambogrande').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "7m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -231,7 +363,19 @@
                 "proyectos de 3 de piura"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '3m').where('distrito', '==', 'piura').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "3m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Piura",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -247,7 +391,19 @@
                 "proyectos de 3.5 de piura"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '3.5m').where('distrito', '==', 'piura').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "3.5m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Piura",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -263,7 +419,19 @@
                 "proyectos de 4 de piura"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '4m').where('distrito', '==', 'piura').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "4m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Piura",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -279,7 +447,19 @@
                 "proyectos de 5 de piura"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '5m').where('distrito', '==', 'piura').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "5m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Piura",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -295,7 +475,19 @@
                 "proyectos de 6 de piura"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '6m').where('distrito', '==', 'piura').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "6m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Piura",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -311,7 +503,19 @@
                 "proyectos de 7 de piura"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('modulo', '==', '7m').where('distrito', '==', 'piura').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "modulo": {
+                            "Value": "7m",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Piura",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -338,7 +542,15 @@
                 "lista el modulo de"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('beneficiario', '==', '#BENEFICIARIO#').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "beneficiario": {
+                            "Value": "",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -368,8 +580,14 @@
                 {
                     "collection": "proyectos",
                     "campos": {
-                        "beneficiario": "#BENEFICIARIO#",
-                        "distrito": "Piura"
+                        "beneficiario": {
+                            "Value": "",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Piura",
+                            "Operator": "="
+                        }
                     }
                 }
             ]
@@ -398,7 +616,19 @@
                 "lista el modulo de tambogrande de"
             ],
             "respuestas": [
-                "db.collection('proyectos').where('beneficiario', '==', '#BENEFICIARIO#').where('distrito', '==', 'tambogrande').get()"
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "beneficiario": {
+                            "Value": "",
+                            "Operator": "="
+                        },
+                        "distrito": {
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        }
+                    }
+                }
             ]
         },
         {
@@ -414,7 +644,10 @@
                 "cuales son todos los usuarios"
             ],
             "respuestas": [
-                "db.collection('usuarios').get()"
+                {
+                    "collection": "usuarios",
+                    "campos": "All"
+                }
             ]
         }
     ]

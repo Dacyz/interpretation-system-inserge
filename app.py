@@ -82,6 +82,7 @@ def GetBeneficiario(message):
         'tambogrande',
         'apellidado',
         'proyectos',
+        'encuentra',
         'principal',
         'proyecto',
         'usuarios',
@@ -95,18 +96,24 @@ def GetBeneficiario(message):
         'sullana',
         'llamado',
         'nombres',
+        'enlista',
+        'muestra',
         'modulo',
         'nombre',
         'metros',
         'senora',
         'señora',
+        ' cuyo ',
+        ' como ',
         'senor',
         'piura',
         'señor',
-        ' cuyo ',
-        ' como ',
-        ' de ',
         ' con ',
+        'busca',
+        'halla',
+        'lista',
+        ' fin ',
+        ' de ',
         ' en ',
         ' el ',
         ' la '
@@ -136,7 +143,7 @@ def BusquedaDeNumbers(Text):
 app = Flask(__name__)
 
 
-@app.route("/miau", methods=['GET'])
+@app.route("/ApiQuestIA", methods=['GET'])
 def home():
     JsonAws = {}
     mensaje = str(request.args['Query'])
@@ -144,28 +151,34 @@ def home():
     JsonAws['Query'] = str(mensaje)
     ContainsNumbers = BusquedaDeNumbers(mensaje)
     if (ContainsNumbers == None):
-        if (RecognizeColection(mensaje)):
-            ints = predecir_clase(mensaje)
-            res = get_respuesta(ints, intenciones)
-            if(type(res) != dict):
-                if (res.find('beneficiario') != -1):
-                    res = res.replace('#BENEFICIARIO#', GetBeneficiario(mensaje))
-            else :
-                if 'beneficiario' in res["campos"]:
-                    res["campos"]["beneficiario"] = GetBeneficiario(mensaje)
-            JsonAws['Answer'] = res
-        else:
-            JsonAws['Error'] = 'No se encontro resultados'
+        ints = predecir_clase(mensaje)
+        res = get_respuesta(ints, intenciones)
+        if 'beneficiario' in res["campos"]:
+            res["campos"]["beneficiario"] = GetBeneficiario(mensaje)
+        JsonAws['Answer'] = res
     else:
         ListaDeKeys = list(ContainsNumbers.keys())
         if ListaDeKeys[0] == 'DNI':
-            JsonAws['Answer'] = "db.collection('proyectos').where('dni', '==', '" + \
-                ContainsNumbers['DNI']+"').get()"
+            JsonAws['Answer'] = {
+                    "collection": "proyectos",
+                    "campos": {
+                        "dni": {
+                            "Value": ContainsNumbers['DNI'],
+                            "Operator": "="
+                        }
+                    }
+                }
         elif ListaDeKeys[0] == 'Telefono':
-            JsonAws['Answer'] = "db.collection('proyectos').where('telefono', '==', '" + \
-                ContainsNumbers['Telefono']+"').get()"
+            JsonAws['Answer'] = {
+                    "collection": "proyectos",
+                    "campos": {
+                        "telefono": {
+                            "Value": ContainsNumbers['Telefono'],
+                            "Operator": "="
+                        }
+                    }
+                }
     return jsonify(JsonAws)
-
 
 if __name__ == '__main__':
     app.run()
