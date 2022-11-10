@@ -22,7 +22,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "3m",
+                            "Value": "3.0 m",
                             "Operator": "="
                         }
                     }
@@ -51,7 +51,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "3.5m",
+                            "Value": "3.5 m",
                             "Operator": "="
                         }
                     }
@@ -80,7 +80,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "4m",
+                            "Value": "4.0 m",
                             "Operator": "="
                         }
                     }
@@ -109,7 +109,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "5m",
+                            "Value": "5.0 m",
                             "Operator": "="
                         }
                     }
@@ -138,7 +138,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "6m",
+                            "Value": "6.0 m",
                             "Operator": "="
                         }
                     }
@@ -167,7 +167,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "7m",
+                            "Value": "7.0 m",
                             "Operator": "="
                         }
                     }
@@ -191,7 +191,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "3m",
+                            "Value": "3.0 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -221,7 +221,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "3.5m",
+                            "Value": "3.5 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -251,7 +251,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "4m",
+                            "Value": "4.0 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -281,7 +281,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "5m",
+                            "Value": "5.0 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -311,7 +311,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "6m",
+                            "Value": "6.0 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -339,7 +339,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "7m",
+                            "Value": "7.0 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -367,7 +367,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "3m",
+                            "Value": "3.0 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -395,7 +395,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "3.5m",
+                            "Value": "3.5 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -423,7 +423,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "4m",
+                            "Value": "4.0 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -451,7 +451,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "5m",
+                            "Value": "5.0 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -479,7 +479,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "6m",
+                            "Value": "6.0 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -507,7 +507,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "modulo": {
-                            "Value": "7m",
+                            "Value": "7.0 m",
                             "Operator": "="
                         },
                         "distrito": {
@@ -625,6 +625,102 @@
                         },
                         "distrito": {
                             "Value": "Tambogrande",
+                            "Operator": "="
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "tag": "BuscarPorDistritoCastilla",
+            "patrones": [
+                "muestrame los proyectos de castilla",
+                "listame solo los proyectos de castilla",
+                "muestra los proyectos de castilla",
+                "lista los proyectos con distrito de castilla",
+                "lista todos los proyectos ubicados en castilla",
+                "lista todos los modulos ubicados en castilla",
+                "enlista todos los modulos ubicados en castilla",
+                "ubica todos los modulos ubicados en castilla"
+            ],
+            "respuestas": [
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "distrito": {
+                            "Value": "Castilla",
+                            "Operator": "="
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "tag": "BuscarPorDistritoVeintiseisDeOctubre",
+            "patrones": [
+                "muestrame los proyectos de veintiseis de octubre",
+                "listame solo los proyectos de veintiseis de octubre",
+                "muestra los proyectos de veintiseis de octubre",
+                "lista los proyectos con distrito de veintiseis de octubre",
+                "lista todos los proyectos ubicados en veintiseis de octubre",
+                "lista todos los modulos ubicados en veintiseis de octubre",
+                "enlista todos los modulos ubicados en veintiseis de octubre",
+                "ubica todos los modulos ubicados en veintiseis de octubre"
+            ],
+            "respuestas": [
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "distrito": {
+                            "Value": "Veintiseis de Octubre",
+                            "Operator": "="
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "tag": "BuscarPorDistritoTambogrande",
+            "patrones": [
+                "muestrame los proyectos de tambogrande",
+                "listame solo los proyectos de tambogrande",
+                "muestra los proyectos de tambo",
+                "lista los proyectos con distrito de tambogrande",
+                "lista todos los proyectos ubicados en tambogrande",
+                "lista todos los modulos ubicados en tambogrande",
+                "enlista todos los modulos ubicados en tambogrande",
+                "ubica todos los modulos ubicados en tambogrande"
+            ],
+            "respuestas": [
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "distrito": {
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "tag": "BuscarPorDistritoPiura",
+            "patrones": [
+                "muestrame los proyectos de piura",
+                "listame solo los proyectos de piura",
+                "muestra los proyectos de piura",
+                "lista los proyectos con distrito de piura",
+                "lista todos los proyectos ubicados en piura",
+                "lista todos los modulos ubicados en piura",
+                "enlista todos los modulos ubicados en piura",
+                "ubica todos los modulos ubicados en piura"
+            ],
+            "respuestas": [
+                {
+                    "collection": "proyectos",
+                    "campos": {
+                        "distrito": {
+                            "Value": "Piura",
                             "Operator": "="
                         }
                     }

@@ -154,7 +154,7 @@ def home():
         ints = predecir_clase(mensaje)
         res = get_respuesta(ints, intenciones)
         if 'beneficiario' in res["campos"]:
-            res["campos"]["beneficiario"] = GetBeneficiario(mensaje)
+            res["campos"]["beneficiario"]["Value"] = GetBeneficiario(mensaje)
         JsonAws['Answer'] = res
     else:
         ListaDeKeys = list(ContainsNumbers.keys())
