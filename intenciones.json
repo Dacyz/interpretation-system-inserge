@@ -2323,11 +2323,7 @@
                     "campos": {
                         "modulo": {
                             "Value": "7.0 m",
-                            "Operator": "="
-                        },
-                        "distrito": {
-                            "Value": "Piura",
-                            "Operator": "="
+                            "Operator": ">"
                         }
                     }
                 }
@@ -2359,11 +2355,7 @@
                     "campos": {
                         "modulo": {
                             "Value": "7.0 m",
-                            "Operator": "="
-                        },
-                        "distrito": {
-                            "Value": "Piura",
-                            "Operator": "="
+                            "Operator": "<"
                         }
                     }
                 }
@@ -2490,7 +2482,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "veintiseis de octubre",
+                            "Value": "Veintiseis de Octubre",
                             "Operator": "="
                         }
                     }
@@ -2554,7 +2546,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "tambogrande",
+                            "Value": "Tambogrande",
                             "Operator": "="
                         }
                     }
@@ -2618,7 +2610,7 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "piura",
+                            "Value": "Piura",
                             "Operator": "="
                         }
                     }
@@ -2718,7 +2710,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "3m castilla",
+                            "Value": "Castilla",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "3.0 m",
                             "Operator": "="
                         }
                     }
@@ -2818,7 +2814,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "3m veintiseis de octubre",
+                            "Value": "Veintiseis de Octubre",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "3.0 m",
                             "Operator": "="
                         }
                     }
@@ -2918,7 +2918,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "3m tambogrande",
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "3.0 m",
                             "Operator": "="
                         }
                     }
@@ -3018,7 +3022,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "3m piura",
+                            "Value": "Piura",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "3.0 m",
                             "Operator": "="
                         }
                     }
@@ -3118,7 +3126,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "3.5m castilla",
+                            "Value": "Castilla",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "3.5 m",
                             "Operator": "="
                         }
                     }
@@ -3218,7 +3230,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "3.5m veintiseis de octubre",
+                            "Value": "Veintiseis de Octubre",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "3.5 m",
                             "Operator": "="
                         }
                     }
@@ -3318,7 +3334,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "3.5m tambogrande",
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "3.5 m",
                             "Operator": "="
                         }
                     }
@@ -3418,7 +3438,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "3.5m piura",
+                            "Value": "Piura",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "3.5 m",
                             "Operator": "="
                         }
                     }
@@ -3518,7 +3542,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "4m castilla",
+                            "Value": "Castilla",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "4.0 m",
                             "Operator": "="
                         }
                     }
@@ -3618,7 +3646,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "4m veintiseis de octubre",
+                            "Value": "Veintiseis de Octubre",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "4.0 m",
                             "Operator": "="
                         }
                     }
@@ -3718,7 +3750,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "4m tambogrande",
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "4.0 m",
                             "Operator": "="
                         }
                     }
@@ -3818,7 +3854,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "4m piura",
+                            "Value": "Piura",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "4.0 m",
                             "Operator": "="
                         }
                     }
@@ -3918,7 +3958,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "5m castilla",
+                            "Value": "Castilla",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "5.0 m",
                             "Operator": "="
                         }
                     }
@@ -4018,7 +4062,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "5m veintiseis de octubre",
+                            "Value": "Veintiseis de Octubre",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "5.0 m",
                             "Operator": "="
                         }
                     }
@@ -4118,7 +4166,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "5m tambogrande",
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "5.0 m",
                             "Operator": "="
                         }
                     }
@@ -4218,7 +4270,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "5m piura",
+                            "Value": "Piura",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "5.0 m",
                             "Operator": "="
                         }
                     }
@@ -4318,7 +4374,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "6m castilla",
+                            "Value": "Castilla",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "5.0 m",
                             "Operator": "="
                         }
                     }
@@ -4418,7 +4478,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "6m veintiseis de octubre",
+                            "Value": "Veintiseis de Octubre",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "6.0 m",
                             "Operator": "="
                         }
                     }
@@ -4518,7 +4582,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "6m tambogrande",
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "6.0 m",
                             "Operator": "="
                         }
                     }
@@ -4618,7 +4686,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "6m piura",
+                            "Value": "Piura",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "6.0 m",
                             "Operator": "="
                         }
                     }
@@ -4718,7 +4790,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "7m castilla",
+                            "Value": "Castilla",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "7.0 m",
                             "Operator": "="
                         }
                     }
@@ -4818,7 +4894,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "7m veintiseis de octubre",
+                            "Value": "Veintiseis de Octubre",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "7.0 m",
                             "Operator": "="
                         }
                     }
@@ -4918,7 +4998,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "7m tambogrande",
+                            "Value": "Tambogrande",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "7.0 m",
                             "Operator": "="
                         }
                     }
@@ -5018,7 +5102,11 @@
                     "collection": "proyectos",
                     "campos": {
                         "distrito": {
-                            "Value": "7m piura",
+                            "Value": "Piura",
+                            "Operator": "="
+                        },
+                        "modulo": {
+                            "Value": "7.0 m",
                             "Operator": "="
                         }
                     }
@@ -5997,7 +6085,7 @@
             ],
             "respuestas": [
                 {
-                    "collection": "usuarios",
+                    "collection": "users",
                     "campos": "All"
                 }
             ]
