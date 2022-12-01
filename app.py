@@ -50,12 +50,10 @@ def predecir_clase(sentencia):
 def get_respuesta(intenciones_list, intenciones_json):
     tag = intenciones_list[0]['itencion']
     lista_de_intenciones = intenciones_json['intenciones']
-    result = 'No entendi :('
     for i in lista_de_intenciones:
         if i['tag'] == tag:
-            result = random.choice(i['respuestas'])
-            break
-    return result
+            return random.choice(i['respuestas'])
+    pass
 
 
 def RecognizeColection(k):
@@ -83,6 +81,7 @@ def GetBeneficiario(message):
         'apellidado',
         'proyectos',
         'encuentra',
+        'muestrame',
         'principal',
         'proyecto',
         'usuarios',
@@ -98,6 +97,7 @@ def GetBeneficiario(message):
         'nombres',
         'enlista',
         'muestra',
+        'buscame',
         'modulo',
         'nombre',
         'metros',
@@ -114,7 +114,9 @@ def GetBeneficiario(message):
         'lista',
         ' fin ',
         ' de ',
+        ' del ',
         ' en ',
+        ' un ',
         ' el ',
         ' la '
     }
@@ -122,7 +124,11 @@ def GetBeneficiario(message):
     for elem in EvitateWords:
         message = message.replace(elem, '')
         message = ' ' + message + ' '
-    return message.strip()
+    message = message.replace('  ', '').strip()
+    if message != '':
+        return message
+    else:
+        pass
 
 
 def BusquedaDeNumbers(Text):
@@ -138,47 +144,74 @@ def BusquedaDeNumbers(Text):
             return {'Telefono': Num}
     else:
         pass
+    
+    
+def TratadoDeDatos(mensaje):
+    JsonAws = {}
+    JsonAws['Query'] = str(mensaje)
+    try:
+        #Busca si el texto contiene números
+        ContainsNumbers = BusquedaDeNumbers(mensaje)
+        #Si no contiene números
+        if (ContainsNumbers == None):
+            #Realiza la predicción de la clase
+            ints = predecir_clase(mensaje.lower()) #Lo volvemos minusculas
+            JsonAws['Intents'] = ints
+            #Obtiene la respuesta de la predicción
+            res = get_respuesta(ints, intenciones)
+            #Si se encontro respuesta
+            if res != None:
+                if 'campos' in res:
+                    #Si se espera el nombre de un beneficiario
+                    if 'beneficiario' in res["campos"]:
+                        #Si se encontro un beneficiario en el query
+                        if GetBeneficiario(mensaje) != None : 
+                            #Se asigna al query
+                            res["campos"]["beneficiario"]["Value"] = GetBeneficiario(mensaje)
+            #Se envia el resultado
+            JsonAws['Answer'] = res
+        #Si contiene números
+        else:
+            #Encapsulamos en una variable la lista de llaves
+            ListaDeKeys = list(ContainsNumbers.keys())
+            #Si es un DNI
+            if ListaDeKeys[0] == 'DNI':
+                #Agrega con formato de respuesta
+                JsonAws['Answer'] = {
+                        "collection": "proyectos",
+                        "campos": {
+                            "dni": {
+                                "Value": ContainsNumbers['DNI'], #Envia el DNI
+                                "Operator": "="
+                            }
+                        }
+                    }
+            #Si es un Telefono
+            elif ListaDeKeys[0] == 'Telefono':
+                #Agrega con formato de respuesta
+                JsonAws['Answer'] = {
+                        "collection": "proyectos",
+                        "campos": {
+                            "telefono": {
+                                "Value": ContainsNumbers['Telefono'], #Envia el telefono
+                                "Operator": "="
+                            }
+                        }
+                    }
+    #Si ocurre un error
+    except Exception as err:
+        #Envia el error
+        JsonAws['Error'] = f"Unexpected {err=}, {type(err)=}"
+    return JsonAws
+
 
 
 app = Flask(__name__)
 
-
 @app.route("/ApiQuestIA", methods=['GET'])
 def home():
-    JsonAws = {}
-    mensaje = str(request.args['Query'])
-    mensaje = mensaje.strip().lower()
-    JsonAws['Query'] = str(mensaje)
-    ContainsNumbers = BusquedaDeNumbers(mensaje)
-    if (ContainsNumbers == None):
-        ints = predecir_clase(mensaje)
-        res = get_respuesta(ints, intenciones)
-        if 'beneficiario' in res["campos"]:
-            res["campos"]["beneficiario"]["Value"] = GetBeneficiario(mensaje)
-        JsonAws['Answer'] = res
-    else:
-        ListaDeKeys = list(ContainsNumbers.keys())
-        if ListaDeKeys[0] == 'DNI':
-            JsonAws['Answer'] = {
-                    "collection": "proyectos",
-                    "campos": {
-                        "dni": {
-                            "Value": ContainsNumbers['DNI'],
-                            "Operator": "="
-                        }
-                    }
-                }
-        elif ListaDeKeys[0] == 'Telefono':
-            JsonAws['Answer'] = {
-                    "collection": "proyectos",
-                    "campos": {
-                        "telefono": {
-                            "Value": ContainsNumbers['Telefono'],
-                            "Operator": "="
-                        }
-                    }
-                }
-    return jsonify(JsonAws)
+    mensaje = str(request.args['Query']).strip()
+    return jsonify(TratadoDeDatos(mensaje))
 
 if __name__ == '__main__':
     app.run()
